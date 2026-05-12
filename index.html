@@ -3,20 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎮 City Chaos: Survival</title>
+    <title>City Chaos: Survival</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- MENU PRINCIPAL -->
     <div id="main-menu" class="screen active">
+        <div class="menu-background">
+            <!-- Bâtiments en arrière-plan -->
+            <div class="building building-1"></div>
+            <div class="building building-2"></div>
+            <div class="building building-3"></div>
+            <div class="building building-4"></div>
+            
+            <!-- Ciel -->
+            <div class="sky">
+                <div class="cloud cloud-1"></div>
+                <div class="cloud cloud-2"></div>
+                <div class="cloud cloud-3"></div>
+            </div>
+        </div>
+
         <div class="menu-container">
-            <h1>🎮 💥 City Chaos: Survival</h1>
-            <p class="subtitle">Urban Warzone | Chaos City | Street Survival</p>
+            <!-- Personnage -->
+            <div class="player-character"></div>
+            
+            <!-- Titre principal -->
+            <div class="main-title">
+                <h1>CITY CHAOS</h1>
+                <h2>SURVIVAL</h2>
+            </div>
+
+            <!-- Boutons -->
             <div class="menu-buttons">
-                <button id="btn-play" class="btn btn-primary">▶️ Jouer</button>
-                <button id="btn-levels" class="btn btn-secondary">🗺️ Sélection des Niveaux</button>
-                <button id="btn-shop" class="btn btn-secondary">🛒 Boutique</button>
-                <button id="btn-options" class="btn btn-secondary">⚙️ Options</button>
+                <button id="btn-play" class="btn btn-play">PLAY</button>
+                <button id="btn-shop" class="btn btn-shop">SHOP</button>
+            </div>
+
+            <!-- Contrôles en haut à droite -->
+            <div class="top-controls">
+                <button class="control-btn">🔊</button>
+                <button class="control-btn">❓</button>
+                <button class="control-btn">⚙️</button>
             </div>
         </div>
     </div>
@@ -203,51 +231,6 @@
                 <!-- Les items seront affichés ici -->
             </div>
             <button id="btn-back-inventory" class="btn btn-danger">Retour</button>
-        </div>
-    </div>
-
-    <!-- RÉSUMÉ DU JEU -->
-    <div id="game-summary" class="screen">
-        <div class="summary-container">
-            <h2>📋 À Propos du Jeu</h2>
-            <div class="summary-content">
-                <h3>🎯 Objectif</h3>
-                <ul>
-                    <li>✅ Éliminer tous les ennemis pour terminer un niveau</li>
-                    <li>💰 Gagner de l'argent à la fin de chaque niveau</li>
-                    <li>📈 Les niveaux deviennent de plus en plus difficiles</li>
-                </ul>
-
-                <h3>🗺️ Système de Niveaux</h3>
-                <ul>
-                    <li>🎮 20 niveaux au total</li>
-                    <li>🚀 Le joueur commence au niveau 1</li>
-                    <li>🔓 Les niveaux se débloquent progressivement</li>
-                </ul>
-
-                <h3>🧍 Gameplay</h3>
-                <ul>
-                    <li>🔫 Tirer sur les ennemis</li>
-                    <li>💥 Détruire des caisses</li>
-                    <li>🚗 Conduire des voitures dans la ville (style Grand Theft Auto)</li>
-                </ul>
-
-                <h3>📦 Système de Loot</h3>
-                <p>Dans les caisses, trouvez:</p>
-                <ul>
-                    <li>💰 Argent</li>
-                    <li>❤️ Vie</li>
-                    <li>🔫 Armes</li>
-                </ul>
-
-                <h3>📈 Progression</h3>
-                <p>Plus le joueur avance:</p>
-                <ul>
-                    <li>💀 Les ennemis sont plus forts</li>
-                    <li>💰 Les récompenses sont plus élevées</li>
-                </ul>
-            </div>
-            <button id="btn-back-summary" class="btn btn-danger">Retour</button>
         </div>
     </div>
 
